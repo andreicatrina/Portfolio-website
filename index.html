@@ -19,6 +19,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- -- SWIPER JS -- -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
   </head>
   <body>
     <nav>
@@ -221,6 +227,93 @@
 
      <!-- ======== END OF FAQ ======== -->
 
+
+
+     <section class="container testimonials__container mySwiper">
+      <h2>Student's Testimonials</h2>
+      <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./Images/person1.png" >
+          </div>
+          <div class="testimonial__info">
+            <h5>Ben Dover</h5>
+            <small>Student</small>
+          </div>
+          <div class="testimonial__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eum dolorem reiciendis sed iste quam quibusdam porro. Nesciunt quae fuga labore, libero voluptate eaque iste eligendi cupiditate nihil ab et.</p>
+          </div>
+        </article>
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./Images/person2.png" >
+          </div>
+          <div class="testimonial__info">
+            <h5>Aiylin Scott</h5>
+            <small>Peasent</small>
+          </div>
+          <div class="testimonial__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eum dolorem reiciendis sed iste quam quibusdam porro. Nesciunt quae fuga labore, libero voluptate eaque iste eligendi cupiditate nihil ab et.</p>
+          </div>
+        </article>
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./Images/person3.png" >
+          </div>
+          <div class="testimonial__info">
+            <h5>Soulja Boy</h5>
+            <small>Web Developer</small>
+          </div>
+          <div class="testimonial__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eum dolorem reiciendis sed iste quam quibusdam porro. Nesciunt quae fuga labore, libero voluptate eaque iste eligendi cupiditate nihil ab et.</p>
+          </div>
+        </article>
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./Images/person4.png" >
+          </div>
+          <div class="testimonial__info">
+            <h5>Ying Yang</h5>
+            <small>Erasmus Student</small>
+          </div>
+          <div class="testimonial__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eum dolorem reiciendis sed iste quam quibusdam porro. Nesciunt quae fuga labore, libero voluptate eaque iste eligendi cupiditate nihil ab et.</p>
+          </div>
+        </article>
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./Images/person5.png" >
+          </div>
+          <div class="testimonial__info">
+            <h5>Ola Senorita</h5>
+            <small>Student</small>
+          </div>
+          <div class="testimonial__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eum dolorem reiciendis sed iste quam quibusdam porro. Nesciunt quae fuga labore, libero voluptate eaque iste eligendi cupiditate nihil ab et.</p>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-pagination"></div>
+     </section>
+
     <script src="./main.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // when window width is >= 600px
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          }
+        }
+      });
+    </script>
   </body>
 </html>
