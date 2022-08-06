@@ -10,7 +10,7 @@
 
 :root {
   --color-primary: #6c63ff;
-  --color-succes: #00bf8e;
+  --color-success: #00bf8e;
   --color-warning: #f7c94b;
   --color-danger: #f75842;
   --color-danger-variant: rgba(247, 88, 66, 0.4);
@@ -224,7 +224,7 @@ header {
  }
 
  .category:nth-child(3) .category__icon{
-  background: var(--color-succes);
+  background: var(--color-success);
  }
 
  .category:nth-child(4) .category__icon{
@@ -232,7 +232,7 @@ header {
  }
 
  .category:nth-child(5) .category__icon{
-  background: var(--color-succes);
+  background: var(--color-success);
  }
 
  
